@@ -1,16 +1,17 @@
 import java.util.Scanner;
 public class Example32 {
     public static void main(String[] argv) {
-        double y,n;
-
+        int n;
+        double x;
+        double squareRoot = 0;
         Scanner inputValue=new Scanner(System.in);
         System.out.println("Enter a number:");
         n= inputValue.nextInt();
+        x = n /2f;
         for (int i=1;i<=10; i++) {
-            double x =n;
-            y = (x + n/x)/2;
-            n=y;
-            System.out.println(y);
+            squareRoot = 0.5 * (x + n/x);
+            x = squareRoot;
         }
+        System.out.println(" The square root of number " + n + "is: " + squareRoot );
     }
 }
